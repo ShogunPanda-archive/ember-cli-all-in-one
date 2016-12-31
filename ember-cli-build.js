@@ -1,6 +1,5 @@
 var EmberAddon = require("ember-cli/lib/broccoli/ember-addon");
 
-// TODO: Write tests
 module.exports = function(defaults){
   var production = EmberAddon.env() === "production";
   var app = new EmberAddon(defaults, {
