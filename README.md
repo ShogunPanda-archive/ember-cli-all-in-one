@@ -1,6 +1,6 @@
 # ember-cli-all-in-one
 
-A small Ember addon that replaces the following tags in `index.html`
+ember-cli-all-in-one is a small Ember addon that replaces the following tags in `index.html`
 
 ```html
 <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
