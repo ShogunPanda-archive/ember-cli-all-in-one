@@ -1,7 +1,5 @@
 # ember-cli-all-in-one
 
-TODO@PI: Write tests - Check for vendor styles applied, check for app styles applied, check for content rendered, check for following the link.
-
 A small Ember addon that replaces the following tags in `index.html`
 
 ```html
