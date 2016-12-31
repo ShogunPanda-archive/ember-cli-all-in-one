@@ -1,10 +1,11 @@
-/*jshint node:true*/
-/* global require, module */
-var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+var EmberAddon = require("ember-cli/lib/broccoli/ember-addon");
 
-module.exports = function(defaults) {
+// TODO: Write tests
+module.exports = function(defaults){
+  var production = EmberAddon.env() === "production";
   var app = new EmberAddon(defaults, {
-    // Add options here
+    minifyJS: {enabled: production},
+    minifyCSS: {enabled: production}
   });
 
   /*
@@ -13,6 +14,9 @@ module.exports = function(defaults) {
     This build file does *not* influence how the addon or the app using it
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
+
+  // Normalize is included just not have vendor.css empty
+  app.import("../../node_modules/normalize.css/normalize.css");
 
   return app.toTree();
 };

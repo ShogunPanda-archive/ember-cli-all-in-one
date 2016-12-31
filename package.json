@@ -1,23 +1,32 @@
 {
-  "name": "ember-all-in-one",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-cli-all-in-one",
+  "version": "0.1.0",
+  "description": "Inline vendor and application Javascript and CSS in the index.html file.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "all-in-one",
+    "embedded"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Shogun <shogun@cowtech.it>",
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/ShogunPanda/ember-cli-all-in-one",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "lint": "eslint index.js lib tests"
   },
   "dependencies": {
+    "broccoli-file-remover": "^0.3.1",
     "ember-cli-babel": "^5.1.7"
   },
   "devDependencies": {
@@ -40,13 +49,15 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.3",
-    "loader.js": "^4.0.10"
+    "eslint": "^3.12.2",
+    "loader.js": "^4.0.10",
+    "normalize.css": "^5.0.0"
   },
   "engines": {
     "node": ">= 0.12.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "after": "ember-cli-uglify"
   }
 }
