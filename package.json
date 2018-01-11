@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-all-in-one",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Inline vendor and application Javascript and CSS in the index.html file.",
   "keywords": [
     "ember-addon",
