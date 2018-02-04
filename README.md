@@ -50,4 +50,4 @@ Each settings can contain any of the following options:
 
 Copyright (C) 2016 and above Shogun <shogun@cowtech.it>.
 
-Licensed under the MIT license, which can be found at http://opensource.org/licenses/MIT.
+Licensed under the MIT license, which can be found at https://choosealicense.com/licenses/mit.
