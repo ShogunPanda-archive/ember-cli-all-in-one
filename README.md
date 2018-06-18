@@ -2,6 +2,10 @@
 
 ember-cli-all-in-one is a small Ember addon that replaces the following tags in `index.html`
 
+## END OF DEVELOPMENT NOTICE
+
+# This module has been discontinued.
+
 ```html
 <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
 <link rel="stylesheet" href="{{rootURL}}assets/dummy.css">
@@ -28,26 +32,26 @@ In the `ember-cli-build.js` file, please define a new `allInOne` section.
 
 This section can contain one of the following sub-section:
 
-* `css`: Settings applied to `assets/vendor.css` and `assets/$APP.css`
-* `js`: Settings applied to `assets/vendor.js` and `assets/$APP.js`
+- `css`: Settings applied to `assets/vendor.css` and `assets/$APP.css`
+- `js`: Settings applied to `assets/vendor.js` and `assets/$APP.js`
 
 Each settings can contain any of the following options:
 
-* `enabled`: If to include this kind of files directly inside the `index.html` file. The default value is `true`.
-* `preserveOriginal`: If not to delete the included file in the `dist` folder. The default value is `false`.
-* `trackReplacements`: If add `data-original-source="$PATH"` to the replacement `<style>` and `<script>` tags. The default value is `true` if not in production environment.
+- `enabled`: If to include this kind of files directly inside the `index.html` file. The default value is `true`.
+- `preserveOriginal`: If not to delete the included file in the `dist` folder. The default value is `false`.
+- `trackReplacements`: If add `data-original-source="$PATH"` to the replacement `<style>` and `<script>` tags. The default value is `true` if not in production environment.
 
 ## Contributing to ember-cli-all-in-one
 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+- Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
+- Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
+- Fork the project.
+- Start a feature/bugfix branch.
+- Commit and push until you are happy with your contribution.
+- Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 
 ## Copyright
 
-Copyright (C) 2016 and above Shogun <shogun@cowtech.it>.
+Copyright (C) 2016 and above Shogun <mailto:shogun@cowtech.it>.
 
 Licensed under the MIT license, which can be found at https://choosealicense.com/licenses/mit.
