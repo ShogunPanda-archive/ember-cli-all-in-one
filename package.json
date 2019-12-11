@@ -39,7 +39,7 @@
     "ember-data": "^2.10.0",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "eslint": "^3.12.2",
+    "eslint": "^6.7.2",
     "loader.js": "^4.0.10",
     "normalize.css": "^5.0.0"
   },
