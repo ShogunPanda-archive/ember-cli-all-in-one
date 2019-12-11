@@ -1,14 +1,16 @@
 # ember-cli-all-in-one
 
+## END OF DEVELOPMENT NOTICE - This package has been discontinued
+
+Inline vendor and application Javascript and CSS in the index.html file.
+
+## Usage
+
 ember-cli-all-in-one is a small Ember addon that replaces the following tags in `index.html`
 
-## END OF DEVELOPMENT NOTICE
-
-# This module has been discontinued.
-
 ```html
-<link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-<link rel="stylesheet" href="{{rootURL}}assets/dummy.css">
+<link rel="stylesheet" href="{{rootURL}}assets/vendor.css" />
+<link rel="stylesheet" href="{{rootURL}}assets/dummy.css" />
 
 <!-- ... -->
 
